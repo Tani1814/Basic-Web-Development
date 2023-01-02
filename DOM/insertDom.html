@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Insert</title>
+    <style>
+        article{
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <article id="fst-art">
+                <h3>art-1</h3>
+                <p class="ath">author-1</p>
+                <p class="des">para-1</p>
+            </article>
+            <article class="que">
+                <h3>art-2</h3>
+                <p class="ath">author-2</p>
+                <p class="des">para-2</p>
+            </article>
+            <article>
+                <h3>art-3</h3>
+                <p class="ath">author-3</p>
+                <p class="des">para-3</p>
+            </article>
+            <article>
+                <h3>Gift list</h3>
+                <ul id="list">
+                    <li>gift - 1</li>
+                    <li>gift - 2</li>
+                    <li>gift - 3</li>
+                    <li>gift - 4</li>
+                    <li>gift - 5</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <script>
+        const article = document.getElementById('fst-art');
+        const newP = document.createElement('p');  //creating new element or tag using js
+        newP.innerHTML = 'This is added by js';    //adding innertext or inneerhtml
+        article.appendChild(newP);                 //seting new element's place
+
+        //add one more gift item
+        const ul = document.getElementById('list');
+        const li = document.createElement('li');
+        li.innerHTML = 'Big gift';
+        ul.appendChild(li);
+    </script>
+</body>
+</html>

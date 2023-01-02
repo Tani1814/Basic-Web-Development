@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Document Object Modek</title>
+    <style>
+        article{
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        document.getElementsByTagName('p')
+        document.getElementById
+        document.getElementsByName
+        document.getElementsByClassName
+        document.getElementsByTagNameNS
+        document.getSelection
+        document.getRootNode
+    -->
+    <main>
+        <section>
+            <h1>dom exploring</h1>
+            <p>open inspect then console</p>
+            <p>document.getElementsByTagName('p')</p>
+            <p id="samework">press enter</p>
+            <!--document.getElementById('samework').style.color = 'red'-->
+            <p>it will sat html collection</p>
+
+            <!--article*3>h3{art-$}+p.des-->
+            <article class="que">
+                <h3>art-1</h3>
+                <p class="ath">author-1</p>
+                <p class="des">para-1</p>
+            </article>
+            <article class="que">
+                <h3>art-2</h3>
+                <p class="ath">author-2</p>
+                <p class="des">para-2</p>
+            </article>
+            <article>
+                <h3>art-3</h3>
+                <p class="ath">author-3</p>
+                <p class="des">para-3</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        document.body.style.backgroundColor = 'grey'; //to give design in full body
+        console.log(document.body);
+        var sdway = document.getElementById('samework');
+        sdway.style.color = 'green';
+        sdway.style.fontSize = '25px';
+
+       var aths = document.getElementsByClassName('ath');
+       for(var i = 0; i < aths.length; i++){
+            var element = aths[i];
+            console.log(element.innerHTML);
+            element.innerHTML = 'writter-' + (i+1); //i+1 to start from 1 like writter-1
+            element.style.backgroundColor = 'skyblue';
+            element.style.fontSize = '22px';
+       }
+
+       var special = document.querySelectorAll('.que h3'); //kono class er spcecial tag niye kaj krte not every tag under that class
+       for(var i = 0; i < special.length; i++){
+            var ele = special[i];
+            ele.setAttribute('title', 'example of setattribute');
+            ele.style.backgroundColor = 'lightgreen';
+            ele.style.fontSize = '25px';
+       }
+       var special2 = document.querySelector('.que h3').style.color = 'darkgreen';
+       console.log(special2);    //this style will be applied only on first h3 tag of que class
+
+       //document.querySelector & document.querySelectorAll
+       //document.querySelector('.que h3')
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Company</title>
+</head>
+<body>
+    <h2 onmousemove="console.log('Hello mouse is over me')">EXPLORE EVENTS</h2> <!--inline event is not professional-->
+    <button onclick="alert(77)">Click me</button>
+
+    <!--1st in professional way-->
+
+    <button onclick="handleClick()">Check Click</button>
+    <script>
+        function handleClick(){
+            console.log('clicked successfully');
+            console.log(new Date());
+        }
+    </script>
+
+     <!--2nd way to give event in specific one-->
+
+     <button>secondWay-1</button>
+     <button id="second">secondWay-2</button>
+     <button>secondWay-3</button>
+     <button id="last">secondWay-4</button>
+    <script>
+        function handle() {
+            document.body.style.backgroundColor = 'lightpink';
+        }
+        const secondWay = document.getElementById('second');
+        secondWay.onclick = handle;  //call hocche na tai () badh
+        /*
+        function() {
+           console.log('second way to set event');    //onclick = 
+        }
+        */
+
+        //--3rd way
+        //secondWay.addEventListener('click', handle);
+        
+        //--4th way
+        //document.getElementById('last').addEventListener('click', function or function_name);
+
+        //4th way example
+        document.getElementById('last').addEventListener('click', function(){
+            document.body.style.color = 'tomato';      //without name this type of function called Anonymous Function
+        });
+        /*
+        //in easy way using variable
+        var btn = document.getElementById('last')
+        btn.addEventListener('click', function(){
+            document.body.style.color = 'tomato';
+        });
+        */
+    </script>
+</body>
+</html>
