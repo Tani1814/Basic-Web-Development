@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+   <head> 
+       <title> Form </title>
+
+   </head>
+
+   <body>
+       <h2> Registration Form </h2>
+        <form>
+
+    <fieldset>
+           <legend> Personal Info </legend>
+
+            <div>
+             <label for ="fullname"> FullName: </label>
+             <input type="text" name="fullname" id="fullname" required>
+            </div> <br>
+
+            <div>
+             <label for ="email"> Email: </label>
+             <input type="email" name="email" id="email">
+            </div> <br>
+
+            <div>
+             <label for ="password"> Password: </label>
+             <input type="password" name="password" id="password">
+            </div> <br>
+
+            <div>
+             <label for ="dob"> Date of Birth: </label>
+             <input type="date" name="dob" id="dob">
+            </div> <br>
+
+            <div>
+             <label for ="photo"> Choose your photo: </label>
+             <input type="file" name="photo" id="photo">
+            </div> <br>
+
+             <div>
+             <label for ="gender"> Gender: </label>
+             <input type="radio" name="gender" id="gender" value="male"> Male
+             <input type="radio" name="gender" id="gender" value="female"> Female
+            </div> <br>
+
+              <div>
+             <label for ="religion"> Religion: </label>
+             <input type="checkbox" name="religion" id="religion" value="islam"> Islam
+             <input type="checkbox" name="religion" id="religion" value="hindu"> Hindu
+            </div> <br>
+
+             <div>
+              <label for ="dept"> Department: </label>
+                <select name="dept" >
+                   <option value="cse" selected> CSE </option>
+                   <option value="eee"> EEE </option>
+                </select>
+             </div> <br>
+
+     </fieldset>
+
+            <div>
+             <label for ="com"> Comment: </label> <br>
+              <textarea cols="25" rows="8"> </textarea>
+            </div>
+
+            <div> 
+               <button> Submit </button>
+               <button> Reset </button> <p>
+                       <input type="button" value="Register">
+                       <input type="reset" value="Reset">
+            </div>
+
+        </form>
+       
+   </body>
+</html>

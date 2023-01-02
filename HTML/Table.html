@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+   <head> 
+       <title> Table </title>
+
+       <style>
+          table{                   <!for accessing table>
+               width:300px;
+               height:200px;
+               border:2px solid black;
+               border-collapse:collapse;     <!for make a single border,no double line>
+           /*cellspacing
+              border-spacing: 4 px;
+for using this we have to remove bcollapse*/
+              
+           }
+
+          td,th{                    
+              border:2px solid black;
+
+             /*cellpadding*/
+              padding:25px;
+             }
+
+           tr{
+              text-align:center;    <!so that we dont have to use align in every tar tag>
+             }
+       </style>
+   </head>
+
+   <body>
+     <table>  <!if we dont use style then in table tag-- border="2" width="300" height="200">
+      
+       <caption> Students details </caption>
+    <thead>
+         <tr>
+           <th>ID </th>
+           <th>NAME</th>
+           <th>GPA</th>
+        </tr>
+      </thead>
+
+  <tbody>
+      <tr>
+           <td>101</td>
+           <td>Tania</td>
+           <td>3.95</td>
+      </tr>
+      <tr>
+           <td>102</td>
+           <td>anis</td>
+           <td>3.92</td>
+      </tr>
+      <tr>
+           <td>103</td>
+           <td>rasel</td>
+           <td>3.45</td>
+      </tr>
+   </tbody>
+     
+ </table>
+
+   </body>
+
+</html>
