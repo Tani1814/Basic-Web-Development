@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Overflow & Tooltip </title>
+    <style>
+        div{
+            height: 100px;
+            width: 250px;
+            background-color: skyblue;
+            border: 2px teal solid;
+            overflow: auto;
+        }
+        .tooltip{
+            position: relative;
+        }
+
+        .tooltip .tooltip-text{
+            /* visibility:hidden; */
+            width: 150px;
+            background-color: steelblue;
+            padding: 10px;
+            border-radius: 8px;
+            position: absolute;
+            top: 30px;
+            left: 25px;
+            z-index: 1; 
+            /* sbar upore text ta rakhte */
+            visibility: hidden;
+
+        }
+        /*.kake (hover) korle .kihobe */
+        .tooltip:hover .tooltip-text{ 
+            visibility: visible ;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class ="tooltip">
+        Facebook
+        <span class="tooltip-text"> a social media </span>
+
+    </a>
+    <br><br>
+    <div>
+        Nach in zu in wiederholt guten im geneigt, 
+        zug ich lieb und stillen um, zug sie der ihr gedränge,
+        freundliche alten mich ihr alten.
+        Lauf und zug mich und wirklichkeiten lied.
+        Schauer vom lebt nebel zu auf geneigt und ich.
+
+    </div>
+</body>
+</html>

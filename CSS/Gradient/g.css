@@ -1,0 +1,10 @@
+.gl{
+   height:250px;
+   width:100%;
+   background-image:linear-gradient(to right bottom,purple,red,pink);
+   }
+.gr{
+   height:400px;
+   width:100%;
+   background:radial-gradient(circle,yellow,orange,red,green,blue,black);
+   }

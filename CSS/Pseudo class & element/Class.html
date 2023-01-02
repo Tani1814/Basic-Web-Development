@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pseudo Class </title>
+    <style>
+        a.my-link:hover{
+            color: green;
+        }
+
+        input{
+            padding: 10px;
+            font-size:1 rem;
+            width: 150px;
+        }
+        input:focus{
+            background-color: lightcoral;
+        }
+
+        table,td,th{
+            width: 100px;
+            padding: 5px;
+            border: 2px black solid;
+            border-collapse: collapse;
+        }
+        tr:nth-child(even){
+            background-color: lightpink;
+        }
+
+    </style>
+</head>
+<body>
+
+    <a class="my-link" href="#"> Tutorial </a>
+    <a href="#"> Facebook </a>
+
+<p></p>
+    <input type="text" placeholder="Enter your name">
+<p></p>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>100</td>
+            <td>TANIA</td>
+        </tr>
+        <tr>
+            <td>49</td>
+            <td>MAHADI</td>
+        </tr>
+    </table>
+
+</body>
+</html>

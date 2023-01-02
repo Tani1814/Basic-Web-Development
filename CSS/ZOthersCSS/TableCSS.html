@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Table </title>
+    <style>
+        table{
+            width: 800px;
+            border:2px black solid;
+            border-collapse: collapse;
+        }
+        td,th{
+            border:2px black solid;
+            vertical-align:top;   /* Or we can use "text-align" */
+            padding: 10px;
+        }
+        th{
+            background-color: green;
+            color: white;
+            height: 25px;
+        }
+/* row r color change korte even or odd hisebe */
+        tr:nth-child(even){
+            background-color: lightgreen;
+        }
+        tr:nth-child(odd){
+            background-color: greenyellow;
+        }
+
+/* kon row te mouse ta nicchi bujhate */
+        tr:hover{
+            background-color: lightgoldenrodyellow;
+        }
+
+    </style>
+</head>
+<body>
+
+    <table>
+        <caption> Student details </caption>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Result</th>
+            <th>Versity</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Rabeya</td>
+            <td>3.95</td>
+            <td>Eastern University</td>
+        </tr>
+
+        <tr>
+            <td>102</td>
+            <td>Mahadi</td>
+            <td>3.92</td>
+            <td>Eastern University</td>
+        </tr>
+
+        <tr>
+            <td>103</td>
+            <td>Tahmeed</td>
+            <td>3.88</td>
+            <td>Eastern University</td>
+        </tr>
+
+        <tr>
+            <td>104</td>
+            <td>Abir</td>
+            <td>3.64</td>
+            <td>Eastern University</td>
+        </tr>
+    </table>
+</body>
+</html>

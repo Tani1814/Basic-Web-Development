@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsible Navigation </title>
+
+    <style>
+        .menu{
+            background-color: teal;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .menu a{
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .menu a:hover{
+            background-color: blue;
+        }
+
+        @media screen and (max-width:600px) {
+            .menu{
+                flex-direction: column;
+            }
+            .menu a{
+                background-color: cornflowerblue;
+                margin: 10px 0;
+                text-align: center;
+                border-radius: 5px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="menu">
+        <a href="#"> Home </a>
+        <a href="#"> Tutorials </a>
+        <a href="#"> Contact me </a>
+        <a href="#"> Aboutme </a>
+
+    </div>
+    
+</body>
+</html>

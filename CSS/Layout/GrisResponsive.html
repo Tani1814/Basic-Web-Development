@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grid Responsive </title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            /*header minimum place nibe thn main auto thn footer minimum */
+            grid-template-rows: min-content auto min-content;
+            grid-template-areas:
+            'h'
+            'm'
+            'm'
+            'm'
+            'f' 
+            ;
+        }
+
+        header{
+              grid-area: h;
+              background-color: cornflowerblue;
+              border: solid;
+              width: 100%;
+        }
+
+        main{
+            grid-area: m;
+            background-color: lightblue;
+            width: 100%;
+            height: 100%;
+        }
+
+        article{
+              height: 100%;
+              display: grid;
+              grid-template-areas:
+              's1 a1'
+              's2 a2'
+              's3 .'
+               ;
+        }
+
+        section{
+               border: solid;
+        }
+        aside{
+            background-color: lightseagreen;
+            border: solid;
+        }
+
+        footer{
+              grid-area: f;
+              background-color: steelblue;
+              border: solid;
+              width: 100%;
+              display: grid;
+              grid-template-areas: 'n1 n2';
+        }
+
+        #sec1{grid-area: s1;}
+        #sec2{grid-area: s2;}
+        #sec3{grid-area: s3;}
+
+        #aside1{grid-area: a1;}
+        #aside2{grid-area: a2;}
+
+        #nav1{grid-area: n1;}
+        #nav2{grid-area: n2;}
+
+        /*for responsive*/
+        @media screen and (max-width:600px){
+            footer{
+              grid-template-areas: 
+              'n1'
+              'n2'
+              ;
+        }
+        }
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav> Header nav </nav>
+    </header>
+
+  <main>
+      <article>
+          <section id="sec1"> Section1 </section>
+          <section id="se2"> Section2 </section>
+          <section id="sec3"> Section3 </section>
+
+          <aside id="aside1"> Aside1 </aside>
+          <aside id="aside2"> Aside2 </aside>
+      </article>
+  </main> 
+  
+  <footer>
+      <nav id="nav1"> Nav1 </nav>
+      <nav id="nav2"> Nav2 </nav>
+  </footer>
+</body>
+</html>

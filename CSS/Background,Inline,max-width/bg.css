@@ -1,0 +1,31 @@
+body{
+   
+   background-image: url("LILY.jpg");
+   background-repeat:no-repeat;
+   background-attachment: fixed ;
+    }
+h1{
+   color:white;
+   background-color:green;
+   width:400px;
+   
+  }
+p{
+    color:white;
+    background-color:hotpink;
+    display:inline;
+   }
+
+.c1{
+    color:white;
+    width:800px;
+    margin auto;
+    border: 3px solid pink;
+   }
+.c2{
+    color:white;
+    max-width:800px;
+    margic auto;
+    border: 3px solid pink;
+   }
+    

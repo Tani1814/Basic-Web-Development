@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Form 1 </title>
+    <style>
+        input[type=text]{
+            width: 100%;
+            font-size: 1rem;
+            padding: 10px 20px;
+            margin: 20px 0;
+            box-sizing: border-box;
+
+            border: 3px solid slategray;
+            border-radius: 5px;
+            background-color: lightgrey;
+
+        }
+        input[type=button],input[type=reset]{
+            width: 80px;
+            border: none;
+            background-color: rgb(23, 64, 80);
+            color: snow;
+            padding: 5px;
+            cursor:pointer;
+        }
+        #search{
+            /* for background-image */
+            background-image: url(search.png);
+            background-repeat: no-repeat;
+            background-position: 10px 15px;
+
+            /* for serach text */
+            padding: 15px 40px;
+            background-color: snow;
+
+            /*for animation in search*/
+            width: 200px;
+            transition: width 0.3s ease-in-out ;
+        }
+        #search:focus{
+            background-color: rgb(213, 242, 253);
+            width: 800px;
+        }
+
+        select{
+            width: 100px;
+            padding: 10px;
+            border: none;
+            background-color: skyblue;
+            border-radius: 10px;
+        }
+
+        textarea{
+            resize: none;
+            width:40%;
+            padding: 10px;
+            border: 2px skyblue solid;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="search" id="search" placeholder="Search">
+        <input type="button" value="search">
+<p></p>
+        <label for="fname"> First Name </label>
+        <input type="text" name ="fname" id="fname">
+
+        <label for="lname"> Lirst Name </label>
+        <input type="text" name ="lname" id="lname">
+<br>
+        <select name="subject_name" id="subjects">
+            <option value="cse" >CSE</option>
+            <option value="eee">EEE</option>
+        </select>
+<br>
+<br>
+        <textarea name="" id="" cols="8" rows="5">write your comment here</textarea>
+<br>
+        <input type="button" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>

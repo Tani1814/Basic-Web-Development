@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Element 2 </title>
+    <style>
+        /*cursor jodi click kore select kori */
+        ::selection{
+            color: hotpink;
+            background-color:black;
+        }
+
+        p::before , p::after{
+            content: '';
+            width: 100%;
+            height: 15px;
+            background-color: blue;
+            display: inline-block;
+        }
+
+        input::placeholder{
+            color:blue
+        }
+
+    </style>
+</head>
+<body>
+    <p>
+       And tufted upon that in thy ebony home distinctly weary,
+        i soul he from the my came my.
+         Evermore but straight and ghost my. 
+         Said before cannot stillness is what rapping,
+        back his cushioned that thing on is this is.
+        To the this out so i, thy and meaninglittle truly. 
+    </p>
+
+    <input type="text" placeholder="write about you">
+    
+</body>
+</html>

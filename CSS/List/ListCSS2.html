@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS List</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    
+    <style>
+        .list{
+            background: cadetblue;
+            padding: 20px;
+            color: white;
+        }
+
+        .list ul{
+           list-style-type: none;
+        }
+/* font awesome r kaj */
+        .list li{
+            font-size: 1.2 rem;
+            color: darkgreen;
+        }
+        .list li::before{
+            content: '\f058';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: bold;
+         /*display used for better margin*/
+            display:inline-block;
+            margin: 10px 5px;
+         /* icon size */
+            font-size: 1.5rem;
+         /* icon color */
+            color: darkblue;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="list">
+        <ul>
+            <li> HTML </li>
+            <li> CSS </li>
+            <li> JS </li>
+            <li> JQuery </li>
+        </ul>
+    </div>
+</body>
+</html>

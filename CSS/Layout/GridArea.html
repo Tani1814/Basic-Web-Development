@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grid Area </title>
+
+    <style>
+        .i1{grid-area: Header;}
+        .i2{grid-area: Menu;}
+        .i3{grid-area: Main;}
+        .i4{grid-area: Aside;}
+        .i5{grid-area: Footer;}
+
+        .g-container{
+            display: grid;
+          /*  grid-template-columns: auto auto auto auto auto;  */
+            grid-template-areas:
+            'Header Header Header Header Header Header'
+            'Menu Menu Main Main Main Aside'
+            'Menu Menu Footer Footer Footer Footer'
+            ;
+        }
+
+        .g-container > div{
+            background-color: lightgreen;
+            border: 1px solid green;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+/*
+        .i1{
+            grid-column: 1/7;
+        }
+
+        .i2{
+            grid-column: 1/2;
+            grid-row: 2/4;
+        }
+
+        .i3{
+            grid-column: 2/6;
+        }
+
+        .i4{
+            grid-column: 6/7;
+        }
+
+        .i5{
+            grid-column: 2/7;
+        }
+    */
+
+    </style>
+</head>
+<body>
+   <div class="g-container">
+
+    <div class="i1">
+        <h1> Header </h1>
+    </div>
+
+    <div  class="i2">
+        <h1> Menu </h1>
+    </div>
+
+    <div  class="i3">
+        <h1> Main  </h1>
+    </div>
+
+    <div  class="i4">
+        <h1> Aside </h1>
+    </div>
+
+    <div  class="i5">
+        <h1> Footer </h1>
+    </div>
+   </div>
+    
+</body>
+</html>
