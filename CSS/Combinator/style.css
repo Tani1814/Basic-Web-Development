@@ -1,0 +1,26 @@
+/*== space ==
+div#container p{
+    background-color:green;
+    color: #fff;
+  }
+*/
+
+/* == '>' ==
+div#container > p {
+  background-color:green;
+  color: #fff;
+}
+*/
+
+/* == '+' ==
+div + p {
+  background-color:green;
+  color: #fff;
+}
+*/
+
+/* == '~' == */
+div ~ p{
+    background-color:green;
+    color: #fff;
+  }
